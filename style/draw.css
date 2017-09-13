@@ -1,0 +1,158 @@
+/* for creative.html */
+#white {
+    background: #fff;
+    font-size: 24px;
+}
+#about{
+    float: right;
+    color:  #fff;
+}
+#myCanvas {
+    padding: 0;
+    margin: 0;
+}
+.fa{
+    background: blue;
+    width: 40px;
+    height: 40px;
+}
+
+#color {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    display: inline-block;
+}
+
+.sample {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #fff;
+}
+.sample.active {
+    border: 5px solid white;
+}
+
+#clear {
+    position: relative;
+    border: none;
+    top: 70px; /* -67px */
+    right: 80px; /* 260px */
+    padding: 2px;
+    margin-left: 90px;
+    background: none;
+    color: red;
+    width: 78px;
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+#clear:hover {
+    color: yellow;
+    background: white;
+}
+.erase{
+    border: 1px solid #000;
+}
+
+/* animation */
+#popUp {
+    position: fixed;
+    max-width: 450px;
+    height: 100%;
+    width: 255px;
+    margin-right: 0px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 20;
+    background: black;
+}
+#popUp .closeTab {
+    color: #fff;
+    right: 8px;
+    top: 0px;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#popUp #tools {
+    font-size: 17px;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+#click {
+    position: fixed;
+    color: #000;
+    font-size: 15px;
+    top: 5px;
+    right: 80px;
+    margin-right: 0;
+    -webkit-transition: all 1.25s ease;
+    -moz-transition: all 1.25s ease;
+    -o-transition: all 1.25s ease;
+    transition: all 1.25s ease;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+#click span {
+    position: absolute;
+    margin-top: 40px;
+    left: 4px;
+    background: #1c8dc4;
+    opacity: .5;
+    padding: 15px;
+}
+
+#click::after {
+    content: '';
+    display: table;
+    position: relative;
+    background: #1c8dc4;
+}
+
+#rad {
+    float: left;
+    color: #fff;
+    padding: 10px;
+}
+
+#radval {
+    position: absolute;
+    top: 55px;
+}
+/* + - */
+.control {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-left: 15px;
+    top: 50px;
+    right: 80px;
+    display: inline-block;
+    text-align: center;
+}
+.control:hover{
+    color: gold;
+    cursor: grabbing;
+}
+@media all{
+  #popUp {
+    margin-left: -750px;
+  }
+  #click{
+    margin-right: 0px;
+  }
+}
