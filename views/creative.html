@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Draw It</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/draw.css">
+</head>
+
+<body id="white">
+    <div id="container">
+        <div id="header">
+            <div id="about"><a href="about.html">About</a><a href="index.html">Home</a></div>
+        </div>
+        <div id="popUp">
+            <div id="close" title="Close" class="closeTab"> <span aria-hidden="true" class="glyphicon glyphicon-remove"></span></div>
+            <div id="new">
+                <div id="tools"></div>
+                <div id="rad">Radius:<span id="radval">1</span>
+                    <div id="addRad" title="Bigger" class="control"></div>
+                    <div id="increaseRad" title="Smaller" class="control"></div>
+                </div>
+                <div id="color"></div>
+                <button id="clear" title="Eraser" class="controlTab"></button>
+            </div>
+        </div>
+        <div id="click">
+           <span aria-hidden="true" title="Click to Open" class="glyphicon glyphicon-dashboard">Click</span>
+        </div>
+        <canvas id="myCanvas" width="700" height="500"></canvas>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
