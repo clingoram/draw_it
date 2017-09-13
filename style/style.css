@@ -1,0 +1,21 @@
+html,
+body{
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+body{
+	color: #fff;
+	background-image:url('../image/canvas.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  border-bottom: 1px solid #fff;
+}
